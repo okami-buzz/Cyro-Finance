@@ -1,0 +1,54 @@
+{
+  "name": "cyro-finance",
+  "version": "1.0.0",
+  "description": "Cyro Finance — World class real crypto trading Discord bot with E2EE, wallets, alerts and multi-exchange support.",
+  "author": "Abinash",
+  "license": "MIT",
+  "private": true,
+
+  "type": "module",
+
+  "engines": {
+    "node": ">=18.0.0"
+  },
+
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "register": "node dist/bot/register.js"
+  },
+
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+
+    "axios": "^1.6.8",
+    "ws": "^8.17.0",
+
+    "ethers": "^6.13.1",
+    "@walletconnect/sign-client": "^2.11.2",
+
+    "crypto-js": "^4.2.0",
+    "jsonwebtoken": "^9.0.2",
+
+    "node-cron": "^3.0.3",
+
+    "winston": "^3.13.0",
+
+    "pg": "^8.11.5",
+    "drizzle-orm": "^0.30.10"
+  },
+
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "tsx": "^4.15.5",
+
+    "@types/node": "^20.11.30",
+
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}

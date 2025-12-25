@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",                    // Modern JS target
+    "module": "ESNext",                    // For Node.js native ESM
+    "moduleResolution": "node",            // Node-style imports
+    "outDir": "dist",                      // Compiled JS goes here
+    "rootDir": "src",                      // Source TS files
+    "strict": true,                        // Strict type checking
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,               // CommonJS interop
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "incremental": true,                   // Fast rebuilds
+    "sourceMap": true,
+    "experimentalDecorators": true,        // For future enhancements
+    "emitDecoratorMetadata": true
+  },
+
+  "include": ["src/**/*"],                 // Compile all src files
+  "exclude": ["node_modules", "dist"],     // Ignore build & dependencies
+  "compileOnSave": false
+}
